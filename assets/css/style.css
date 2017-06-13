@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF2DE;
+}
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #111122;
+}
+.accent {
+    color: #FF6501;
+    font-weight: bold;
+    font-size: 125%;
+}
+.author {
+    font-size: 150%;
+    text-align: right;
+}
+.copyright {
+    font-style: italic;
+    font-size: 75%;
+}
+.quote {
+    font-size: 250%;
+}
+.quoteBlock {
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #111122;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+@media only screen and (max-width: 64em)
+{
+    main {
+        position: relative;
+    }
+    .quoteBlock {
+        width: 100%;
+        position: absolute;
+
+
+        margin: 15% 0 0 0;
+    }
+    .wrapper {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
+}
+
+@media only screen and (max-width: 64em)
+{
+    .quoteBlock {
+        margin: 0;
+        font-size: 85%;
+        margin-top: 35%;
+    }
+}
