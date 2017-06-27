@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFF2DE;
+    background-color: #332D2A;
 }
 header, main, nav, footer, figure, figcaption, aside, section, article {
     display: block;
@@ -12,61 +12,57 @@ footer {
     bottom: 0;
     color: #111122;
 }
+main {
+    position: relative;
+}
 .accent {
-    color: #FF6501;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 125%;
 }
-.author {
-    font-size: 150%;
-    text-align: right;
+#author {
+    font-size: 75%;
+    float:right;
+    color: #FFFFFF;
 }
 .copyright {
     font-style: italic;
     font-size: 75%;
+    color: #FFFFFF;
 }
-.quote {
+#quote {
+    display: table-cell;
+    vertical-align: middle;
     font-size: 250%;
-}
-.quoteBlock {
-    width: 30em;
-    height: 20em;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     margin: auto;
-    color: #111122;
+}
+#quoteBlock {
+    min-height: 100vh;
+    display: table;
+    margin: auto;
+    color: #7BB89A;
     font-family: 'Julius Sans One', sans-serif;
 }
+.wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 @media only screen and (max-width: 64em)
 {
-    main {
-        position: relative;
+    .wrapper {
+        width: 80%;
     }
-    .quoteBlock {
-        width: 100%;
-        position: absolute;
 
+}
 
-        margin: 15% 0 0 0;
+@media only screen and (max-width: 32em)
+{
+    body {
+        font-size: 75%;
     }
     .wrapper {
         width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        }
-
-
-}
-
-@media only screen and (max-width: 64em)
-{
-    .quoteBlock {
-        margin: 0;
-        font-size: 85%;
-        margin-top: 35%;
     }
 }
